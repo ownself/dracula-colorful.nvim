@@ -37,6 +37,10 @@ function M.get(C)
     DiagnosticSignInfo = { fg = C.cyan },
     DiagnosticSignHint = { fg = C.sky },
     DiagnosticSignOk = { fg = C.green },
+    DiagnosticVirtualLinesError = { fg = C.red },
+    DiagnosticVirtualLinesWarn = { fg = C.orange },
+    DiagnosticVirtualLinesInfo = { fg = C.cyan },
+    DiagnosticVirtualLinesHint = { fg = C.sky },
 
     LspDiagnosticsDefaultError = { link = "DiagnosticError" },
     LspDiagnosticsDefaultWarning = { link = "DiagnosticWarn" },
@@ -46,6 +50,7 @@ function M.get(C)
     LspDiagnosticsUnderlineWarning = { link = "DiagnosticUnderlineWarn" },
     LspDiagnosticsUnderlineInformation = { link = "DiagnosticUnderlineInfo" },
     LspDiagnosticsUnderlineHint = { link = "DiagnosticUnderlineHint" },
+    DiagnosticSignOther = { fg = C.subtle },
 
     LspInlayHint = { fg = C.subtle, bg = U.blend(C.bg_float, C.bg, 0.65), italic = true },
     LspCodeLens = { fg = C.subtle, italic = true },

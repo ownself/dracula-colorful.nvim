@@ -10,6 +10,7 @@ function M.get(C, R)
     ["@constant.builtin"] = { fg = C.purple },
     ["@constant.macro"] = { fg = C.purple },
     ["@module"] = { fg = C.cyan },
+    ["@module.builtin"] = { fg = C.cyan, italic = true },
     ["@label"] = { fg = C.subtle },
     ["@string"] = R.string,
     ["@string.documentation"] = { fg = C.comment },
@@ -27,6 +28,8 @@ function M.get(C, R)
     ["@type"] = R.type,
     ["@type.builtin"] = { fg = C.cyan },
     ["@type.definition"] = { fg = C.cyan },
+    ["@type.qualifier"] = { fg = C.pink },
+    ["@type.parameter"] = { fg = C.purple },
     ["@attribute"] = { fg = C.green },
     ["@property"] = R.field,
     ["@function"] = R.function_name,
@@ -38,6 +41,9 @@ function M.get(C, R)
     ["@constructor"] = { fg = C.cyan },
     ["@operator"] = R.operator,
     ["@keyword"] = R.keyword,
+    ["@keyword.modifier"] = R.keyword,
+    ["@keyword.type"] = R.keyword,
+    ["@keyword.coroutine"] = R.keyword,
     ["@keyword.function"] = R.keyword,
     ["@keyword.operator"] = R.keyword,
     ["@keyword.import"] = { fg = C.pink },
@@ -50,9 +56,11 @@ function M.get(C, R)
     ["@keyword.directive.define"] = { fg = C.purple },
     ["@punctuation.delimiter"] = { fg = C.fg },
     ["@punctuation.bracket"] = { fg = C.fg },
+    ["@punctuation.delimiter.regex"] = { fg = C.pink },
     ["@punctuation.special"] = { fg = C.orange },
     ["@comment"] = R.comment,
     ["@comment.documentation"] = R.comment,
+    ["@comment.documentation.java"] = { fg = C.comment },
     ["@comment.error"] = { fg = C.red, bold = true },
     ["@comment.warning"] = { fg = C.orange, bold = true },
     ["@comment.note"] = { fg = C.cyan, bold = true },
@@ -63,6 +71,12 @@ function M.get(C, R)
     ["@markup.strikethrough"] = { fg = C.subtle, strikethrough = true },
     ["@markup.underline"] = { fg = C.cyan, underline = true },
     ["@markup.heading"] = { fg = C.purple, bold = true },
+    ["@markup.heading.1.markdown"] = { fg = C.purple, bold = true },
+    ["@markup.heading.2.markdown"] = { fg = C.pink, bold = true },
+    ["@markup.heading.3.markdown"] = { fg = C.orange, bold = true },
+    ["@markup.heading.4.markdown"] = { fg = C.green, bold = true },
+    ["@markup.heading.5.markdown"] = { fg = C.cyan, bold = true },
+    ["@markup.heading.6.markdown"] = { fg = C.comment, bold = true },
     ["@markup.quote"] = { fg = C.comment },
     ["@markup.math"] = { fg = C.purple },
     ["@markup.link"] = { fg = C.pink, underline = true },
@@ -79,6 +93,24 @@ function M.get(C, R)
     ["@tag.builtin"] = { fg = C.pink },
     ["@tag.attribute"] = { fg = C.green },
     ["@tag.delimiter"] = { fg = C.fg },
+    ["@tag.tsx"] = { fg = C.cyan },
+    ["@tag.builtin.tsx"] = { fg = C.pink },
+    ["@tag.attribute.tsx"] = { fg = C.green },
+    ["@constructor.tsx"] = { fg = C.cyan },
+    ["@variable.member.yaml"] = { fg = C.cyan },
+    ["@label.yaml"] = { fg = C.orange },
+    ["@string.special.url.html"] = { fg = C.orange, underline = true },
+    ["@markup.link.label.html"] = { fg = C.fg },
+    ["@character.special.html"] = { fg = C.purple },
+    ["@property.css"] = { fg = C.cyan },
+    ["@property.scss"] = { fg = C.cyan },
+    ["@property.id.css"] = { fg = C.green },
+    ["@property.class.css"] = { fg = C.green },
+    ["@type.css"] = { fg = C.pink },
+    ["@type.tag.css"] = { fg = C.pink },
+    ["@number.css"] = { fg = C.purple },
+    ["@keyword.directive.css"] = { fg = C.pink },
+    ["@constructor.python"] = { fg = C.cyan },
   }
 
   groups["@parameter"] = groups["@variable.parameter"]
@@ -103,13 +135,16 @@ function M.get(C, R)
   groups["@text.diff.add"] = groups["@diff.plus"]
   groups["@text.diff.delete"] = groups["@diff.minus"]
   groups["@type.qualifier"] = groups["@keyword"]
-  groups["@storageclass"] = groups["@keyword"]
+  groups["@storageclass"] = groups["@keyword.modifier"]
+  groups["@keyword.storage"] = groups["@keyword.modifier"]
   groups["@repeat"] = groups["@keyword.repeat"]
   groups["@conditional"] = groups["@keyword.conditional"]
   groups["@exception"] = groups["@keyword.exception"]
   groups["@include"] = groups["@keyword.import"]
   groups["@define"] = groups["@keyword.directive.define"]
   groups["@preproc"] = groups["@keyword.directive"]
+  groups["@float"] = groups["@number.float"]
+  groups["@string.regex"] = groups["@string.regexp"]
 
   return groups
 end

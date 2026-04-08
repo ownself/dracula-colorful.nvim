@@ -23,6 +23,13 @@ Implemented in the first pass:
 - focused integrations for `nvim-cmp`, `blink.cmp`, `gitsigns`, `rainbow-delimiters`, and `nvim-tree`
 - fixture files for visual verification
 
+Implemented in the second pass:
+
+- improved TSX and JSX-specific query overrides
+- broader TreeSitter capture coverage for modifier, builtin, CSS, HTML, YAML, and markdown heading cases
+- richer semantic token coverage for readonly, static, default-library, and global-scope hints
+- Rider-inspired rainbow delimiter colors derived from the `.icls` scheme
+
 ## Installation
 
 Lazy.nvim example:

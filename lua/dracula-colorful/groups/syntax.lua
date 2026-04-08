@@ -45,6 +45,8 @@ function M.get(C, R)
     SpellCap = { undercurl = true, sp = C.cyan },
     SpellLocal = { undercurl = true, sp = C.orange },
     SpellRare = { undercurl = true, sp = C.purple },
+    DiagnosticDeprecated = { fg = C.subtle, strikethrough = true },
+    DiagnosticUnnecessary = { fg = C.subtle },
     QuickFixLine = { bg = C.bg_selection },
   }
 end

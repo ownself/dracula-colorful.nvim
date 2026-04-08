@@ -25,6 +25,18 @@ function M.get()
     sky = "#98AFFF",
     teal = "#8BE9FD",
     border = "#6B7090",
+    braces = "#737FFF",
+    brackets = "#36FFAC",
+    parens = "#FFF906",
+    rainbow = {
+      "#BD93F9",
+      "#FF79C6",
+      "#FFB86C",
+      "#50FA7B",
+      "#8BE9FD",
+      "#737FFF",
+      "#36FFAC",
+    },
     none = "NONE",
     terminal = {
       "#21222C",
