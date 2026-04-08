@@ -111,6 +111,14 @@ function M.get(C, R)
     ["@number.css"] = { fg = C.purple },
     ["@keyword.directive.css"] = { fg = C.pink },
     ["@constructor.python"] = { fg = C.cyan },
+    ["@attribute.c_sharp"] = { fg = C.green },
+    ["@keyword.import.cpp"] = { fg = C.pink },
+    ["@function.macro.rust"] = { fg = C.purple },
+    ["@label.rust"] = { fg = C.orange },
+    ["@type.builtin.rust"] = { fg = C.cyan },
+    ["@type.qualifier.cpp"] = { fg = C.pink },
+    ["@type.parameter.cpp"] = { fg = C.purple },
+    ["@type.parameter.c_sharp"] = { fg = C.purple },
   }
 
   groups["@parameter"] = groups["@variable.parameter"]

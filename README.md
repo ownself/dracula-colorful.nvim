@@ -30,6 +30,12 @@ Implemented in the second pass:
 - richer semantic token coverage for readonly, static, default-library, and global-scope hints
 - Rider-inspired rainbow delimiter colors derived from the `.icls` scheme
 
+Implemented in the third pass:
+
+- added language-specific refinements for C#, C++, and Rust
+- improved Rider-aligned handling for attributes, predefined types, parameters, properties, methods, and macros in those languages
+- added representative fixtures for C#, C++, Rust, and TSX
+
 ## Installation
 
 Lazy.nvim example:
