@@ -48,3 +48,11 @@
   "stackalloc"
   "typeof"
 ] @keyword.operator
+
+; Rider-like semantic refinements that are safe with the installed parser.
+
+(enum_member_declaration
+  name: (identifier) @constant)
+
+(type_parameter
+  name: (identifier) @type.parameter)

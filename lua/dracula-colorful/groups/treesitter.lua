@@ -2,7 +2,7 @@ local M = {}
 
 function M.get(C, R)
   local groups = {
-    ["@variable"] = R.identifier,
+    ["@variable"] = R.local_variable,
     ["@variable.builtin"] = { fg = C.purple },
     ["@variable.parameter"] = R.parameter,
     ["@variable.member"] = R.field,
@@ -31,7 +31,7 @@ function M.get(C, R)
     ["@type.qualifier"] = { fg = C.pink },
     ["@type.parameter"] = { fg = C.purple },
     ["@attribute"] = { fg = C.green },
-    ["@property"] = R.field,
+    ["@property"] = R.property,
     ["@function"] = R.function_name,
     ["@function.builtin"] = { fg = C.cyan },
     ["@function.call"] = R.function_name,

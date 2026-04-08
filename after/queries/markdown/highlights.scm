@@ -1,13 +1,8 @@
 ;; extends
 [
-  (link_text)
-] @markup.link
+  (fenced_code_block)
+] @markup.raw
 
 [
   (link_destination)
 ] @markup.link.url
-
-[
-  (code_span)
-  (fenced_code_block)
-] @markup.raw

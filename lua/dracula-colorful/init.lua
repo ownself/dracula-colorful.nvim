@@ -4,10 +4,10 @@ local default_options = {
   transparent_background = false,
   dim_inactive = false,
   styles = {
-    comments = { "italic" },
+    comments = {},
     keywords = {},
     functions = {},
-    parameters = { "italic" },
+    parameters = {},
     fields = {},
     types = {},
   },
