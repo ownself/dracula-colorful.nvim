@@ -1,0 +1,9 @@
+.palette-card {
+  color: #f8f8f2;
+  background: #282a36;
+  border-color: #bd93f9;
+}
+
+#palette-card:hover {
+  color: #50fa7b;
+}

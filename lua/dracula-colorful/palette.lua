@@ -1,0 +1,50 @@
+local M = {}
+
+function M.get()
+  return {
+    bg = "#282A36",
+    bg_dark = "#242632",
+    bg_darker = "#21222C",
+    bg_float = "#3A3D4C",
+    bg_visual = "#494E69",
+    bg_cursorline = "#1E1F29",
+    bg_selection = "#494E69",
+    fg = "#F8F8F2",
+    fg_muted = "#B9BCD1",
+    comment = "#98AFFF",
+    subtle = "#787E9F",
+    gutter = "#3F4152",
+    guide = "#3E404B",
+    cyan = "#8BE9FD",
+    green = "#50FA7B",
+    orange = "#FFB86C",
+    pink = "#FF79C6",
+    purple = "#BD93F9",
+    red = "#FF5555",
+    yellow = "#F1FA8C",
+    sky = "#98AFFF",
+    teal = "#8BE9FD",
+    border = "#6B7090",
+    none = "NONE",
+    terminal = {
+      "#21222C",
+      "#FF5555",
+      "#50FA7B",
+      "#F1FA8C",
+      "#BD93F9",
+      "#FF79C6",
+      "#8BE9FD",
+      "#F8F8F2",
+      "#6272A4",
+      "#FF6E6E",
+      "#69FF94",
+      "#FFFFA5",
+      "#D6ACFF",
+      "#FF92DF",
+      "#A4FFFF",
+      "#FFFFFF",
+    },
+  }
+end
+
+return M
