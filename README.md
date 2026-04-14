@@ -11,33 +11,6 @@ A Neovim 0.12+ colorscheme inspired by Rider's `Dracula Colorful`, with first-cl
 - support modern TreeSitter captures and LSP semantic tokens
 - keep the implementation modular and easy to extend
 
-## Status
-
-This repository is an initial implementation driven by the OpenSpec change `add-dracula-colorful-nvim`.
-
-Implemented in the first pass:
-
-- standalone `:colorscheme dracula-colorful`
-- canonical palette and semantic role mapping
-- editor UI groups and base Vim syntax groups
-- TreeSitter groups, compatibility aliases, and language query overrides
-- native LSP diagnostics, inlay hints, code lens, and semantic token groups
-- focused integrations for `nvim-cmp`, `blink.cmp`, `gitsigns`, `rainbow-delimiters`, and `nvim-tree`
-- fixture files for visual verification
-
-Implemented in the second pass:
-
-- improved TSX and JSX-specific query overrides
-- broader TreeSitter capture coverage for modifier, builtin, CSS, HTML, YAML, and markdown heading cases
-- richer semantic token coverage for readonly, static, default-library, and global-scope hints
-- Rider-inspired rainbow delimiter colors derived from the `.icls` scheme
-
-Implemented in the third pass:
-
-- added language-specific refinements for C#, C++, and Rust
-- improved Rider-aligned handling for attributes, predefined types, parameters, properties, methods, and macros in those languages
-- added representative fixtures for C#, C++, Rust, and TSX
-
 ## Installation
 
 Lazy.nvim example:
