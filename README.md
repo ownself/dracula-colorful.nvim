@@ -2,6 +2,8 @@
 
 A Neovim 0.12+ colorscheme inspired by Rider's `Dracula Colorful`, with first-class TreeSitter and LSP support.
 
+![](dracula-colorful.png)
+
 ## Goals
 
 - preserve the Dracula family identity
@@ -42,15 +44,15 @@ Lazy.nvim example:
 
 ```lua
 {
-  dir = "D:/Temp/ColorScheme/dracula-colorful.nvim",
+  dir = "ownself/dracula-colorful.nvim",
   name = "dracula-colorful.nvim",
   priority = 1000,
   config = function()
     require("dracula-colorful").setup({
       transparent_background = false,
       styles = {
-        comments = { "italic" },
-        parameters = { "italic" },
+        -- comments = { "italic" },
+        -- parameters = { "italic" },
       },
     })
     vim.cmd.colorscheme("dracula-colorful")
