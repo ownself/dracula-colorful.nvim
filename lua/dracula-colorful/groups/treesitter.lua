@@ -119,6 +119,7 @@ function M.get(C, R)
     ["@type.qualifier.cpp"] = { fg = C.pink },
     ["@type.parameter.cpp"] = { fg = C.purple },
     ["@type.parameter.c_sharp"] = { fg = C.purple },
+    ["@variable.preproc.c_sharp"] = { fg = C.fg },
   }
 
   groups["@parameter"] = groups["@variable.parameter"]

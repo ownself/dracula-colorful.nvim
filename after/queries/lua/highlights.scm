@@ -1,7 +1,6 @@
 ;; extends
-[
-  (field)
-] @property
+(field
+  name: (identifier) @property)
 
 (
   method_index_expression
