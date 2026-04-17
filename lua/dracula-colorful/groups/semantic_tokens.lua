@@ -32,7 +32,7 @@ function M.get(C, _, O)
     ["@lsp.typemod.enum.defaultLibrary"] = { fg = C.cyan, italic = true },
     ["@lsp.typemod.field.defaultLibrary"] = { fg = C.orange, italic = true },
     ["@lsp.typemod.field.readonly"] = { fg = C.orange, bold = true },
-    ["@lsp.typemod.field.static"] = { fg = C.orange, bold = true },
+    ["@lsp.typemod.field.static"] = { fg = C.purple, bold = true },
     ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.function.builtin"] = { link = "@function.builtin" },
     ["@lsp.typemod.method.defaultLibrary"] = { fg = C.cyan },
