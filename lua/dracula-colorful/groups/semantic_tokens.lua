@@ -7,6 +7,7 @@ function M.get(C, _, O)
   return {
     ["@lsp.type.class"] = { fg = C.cyan },
     ["@lsp.type.comment"] = { fg = C.comment, italic = comment_italic },
+    ["@lsp.type.constant"] = { fg = C.purple, bold = true },
     ["@lsp.type.enum"] = { fg = C.cyan },
     ["@lsp.type.decorator"] = { fg = C.green },
     ["@lsp.type.enumMember"] = { fg = C.purple },
@@ -29,6 +30,9 @@ function M.get(C, _, O)
     ["@lsp.type.variable.readonly"] = { fg = C.purple, bold = true },
     ["@lsp.type.variable"] = { fg = C.fg_muted },
     ["@lsp.typemod.class.defaultLibrary"] = { fg = C.cyan, italic = true },
+    ["@lsp.typemod.constant.defaultLibrary"] = { fg = C.purple, bold = true, italic = true },
+    ["@lsp.typemod.constant.readonly"] = { fg = C.purple, bold = true },
+    ["@lsp.typemod.constant.static"] = { fg = C.purple, bold = true },
     ["@lsp.typemod.enum.defaultLibrary"] = { fg = C.cyan, italic = true },
     ["@lsp.typemod.field.defaultLibrary"] = { fg = C.orange, italic = true },
     ["@lsp.typemod.field.readonly"] = { fg = C.orange, bold = true },
