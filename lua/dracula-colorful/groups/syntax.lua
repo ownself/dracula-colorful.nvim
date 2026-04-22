@@ -38,6 +38,7 @@ function M.get(C, R)
     Error = { fg = C.red },
     Todo = { fg = C.bg, bg = C.pink, bold = true },
     Conceal = { fg = C.cyan },
+    jsonKeyword = { link = "@property" },
     ErrorMsg = { fg = C.red },
     MoreMsg = { fg = C.green },
     ModeMsg = { fg = C.cyan },
